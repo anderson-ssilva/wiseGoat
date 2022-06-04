@@ -1,0 +1,134 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    max-width: 1440px;
+}
+
+main .pedir-conselho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50vw;
+}
+
+main .pedir-conselho .texto{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+main .pedir-conselho .texto h1{
+    font-size: 5rem;
+    color: #BAA193;
+
+}
+
+main .pedir-conselho .texto span{
+    font-size: 13rem;
+    color: #72005F;
+
+}
+
+main .pedir-conselho .botao{
+    width: 50%;
+}
+
+main .pedir-conselho .botao button{
+    height: 75px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: #72005F;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+main .pedir-conselho .botao button:hover{
+    background-color: #45003a;
+}
+
+main .imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50vw;
+}
+
+main .imagem img{
+    height: 500px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 1024px){
+    main .pedir-conselho .texto{
+        width: 70%;
+        margin-bottom: 25px;
+    }
+    
+    main .pedir-conselho .botao{
+        width: 70%;
+    }
+}
+
+@media(max-width: 768px){
+    main .pedir-conselho .texto h1{
+        font-size: 4rem;    
+    }
+    
+    main .pedir-conselho .texto span{
+        font-size: 9rem;    
+    }
+    
+    main .pedir-conselho .botao button{
+        height: 70px;
+        font-size: 2.5rem;
+    }
+
+    main .imagem img{
+        height: 400px;
+    }
+}
+
+@media(max-width: 425px){
+    main{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    main .pedir-conselho{
+        width: 100vw;
+        justify-content: start;
+    }
+
+    main .pedir-conselho .texto h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    main .pedir-conselho .texto span{
+        font-size: 5rem;
+    
+    }
+    
+    main .pedir-conselho .botao button{
+        height: 55px;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    main .imagem {
+        margin-bottom: 50px;
+    }
+
+    main .imagem img{
+        height: 320px;
+    }
+
+}

@@ -1,0 +1,114 @@
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+}
+
+.cabecalho{
+    padding: 20px 35px;
+    line-height: 40px;
+    height: 20vh;
+}
+
+.cabecalho .logo{
+    font-size: 2rem;
+    color: #BAA193;
+    width: 10%;
+}
+
+.cabecalho h1{
+    font-size: 3rem;
+    color: #BAA193;
+}
+
+.cabecalho span{
+    font-size: 5rem;
+    color: #72005F;
+}
+
+.advice{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80vh;
+}
+
+.advice .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #baa1933a;
+    width: 60%;
+}
+
+.advice .container .goat-quote{
+    font-size: 3rem;
+    color: #72005F;
+    width: 40%;
+    padding-left: 50px;
+}
+
+
+.advice .container .goat-quote .assinatura{
+    color: #BAA193;
+    text-align: end;
+}
+
+.advice .container .imagem{
+    text-align: center;
+    background-color: #BAA193;
+    width: 50%;
+    height: auto;
+}
+
+.advice .container .imagem .bode-sabio{
+    height: 400px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 1024px){
+    .advice .container .imagem .bode-sabio{
+        height: 300px;
+    }
+}
+
+@media(max-width: 768px){
+    .advice .container .goat-quote{
+        font-size: 2rem;
+    }
+
+    .advice .container .imagem .bode-sabio{
+        height: 200px;
+    }
+}
+
+@media(max-width: 425px){
+    .advice .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+    }
+
+    .advice .container .goat-quote{
+        width: 80%;
+        padding-left: 0;
+        /* text-align: center; */
+        padding-top: 20px;
+    }
+
+    .advice .container .imagem{
+        height: 100%;
+        width: 100%;
+    }
+
+    .advice .container .imagem .bode-sabio{
+        height: 200px;
+    }
+
+
+}
